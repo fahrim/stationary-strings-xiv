@@ -23,10 +23,13 @@ Author: Fahri Meral · Date: October 19, 2026 · Version: v1 (Grand Proof III)
 
 ## Results (zero free parameters)
 
-- PEO vortex: core 5.14198 mm (C = 1.62603794, band center), velocity 0.23703 m/s,
-  funnel 8.09603 mm (ratio 0.31402536, band center).
-- Vela glitch 2.38190025e-6 vs (2.25 ± 0.35)e-6 (5.86%, 0.38σ);
-  Q_fast 0.05910575, Q_total 0.13569214, both in [0.05, 0.18].
+- PEO vortex: core 5.14198 mm (C = 1.62603794), velocity 0.23703 m/s,
+  funnel 8.09603 mm (ratio 0.31402536). **The comparison bands are NOT verified:**
+  they do not occur in Groisman & Steinberg (2000), so no band agreement is claimed.
+- Vela glitch 2.07112467e-6 with source-verified inputs (ν = 11.194615 Hz,
+  |ν̇| = 1.55615e-11 Hz/s, ΔI/I ≥ 0.014): 0.43% from the 2004 event
+  (2.08e-6) and 32.9% from the largest 2000 event (3.0858e-6);
+  measured healing Q_2000 = 0.02198; relaxation scales 1.2 min / 0.53 / 3.29 / 19.07 d.
 - Na-22 band ratio 0.08413579; false forms 9.31 / 159.37 refuted at 2.4e6σ.
 
 ## Numerical reproduction
@@ -38,7 +41,7 @@ Tests T35–T37 are produced with the solver in the **Paper V repository**
 git clone https://github.com/fahrim/stationary-strings-v
 pip install numpy scipy matplotlib
 python duran_sicimler_sim/solver_engine.py   # T1–T37 (38/38 PASS)
-python duran_sicimler_sim/mini_check_gp3.py  # independent cross-check (12/12 PASS)
+python duran_sicimler_sim/mini_check_gp3.py  # independent cross-check (13/13 PASS)
 ```
 
 The independent cross-check never imports the solver.

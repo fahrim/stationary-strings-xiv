@@ -37,15 +37,16 @@ gözlemevi verisiyle doğrudan testi sunulmaktadır:
 \begin{enumerate}
     \item \textbf{Viskoelastik Girdap PIV (Teorem GP-III.1, Test T35):}
     Burgers girdabında PEO çekirdek genişlemesi $5.14198$ mm
-    ($\mathcal{C}_{\mathrm{univ}}$, $+\%62.60$), tepe hız frenlemesi
-    $0.23703$ m/s ($\mathcal{C}_{\mathrm{univ}}^{-1}$) ve huni bastırması
-    $8.09603$ mm (oran $0.31402536$, $3.1845\times$); üçü de literatür
-    bantlarının tam merkezindedir.
+    ($\mathcal{C}_{\mathrm{univ}}$), tepe hız frenlemesi $0.23703$ m/s
+    ($\mathcal{C}_{\mathrm{univ}}^{-1}$) ve huni bastırması $8.09603$ mm
+    (oran $0.31402536$, $3.1845\times$).
     \item \textbf{Vela Glitch (Teorem GP-III.2, Test T36):}
-    $(\Delta\nu/\nu_0)_{\mathrm{Meral}}=2.38190025\times 10^{-6}$,
-    gözlemsel $(2.25\pm 0.35)\times 10^{-6}$ ile \%5.86 ($0.38\,\sigma$);
-    $Q_{\mathrm{fast}}=0.05910575$, $Q_{\mathrm{total}}=0.13569214$,
-    ikisi de $[0.05,0.18]$ bandındadır.
+    Kaynak-doğrulanmış girdilerle ($\nu_0=11.194615$ Hz,
+    $|\dot\nu_0|=1.55615\times10^{-11}$ Hz/s, $\Delta I/I\ge 0.014$):
+    $(\Delta\nu/\nu_0)_{\mathrm{Meral}}=2.071125\times 10^{-6}$;
+    2004 olayı $2.08\times10^{-6}$ ile \%0.43, en büyük 2000 olayı
+    $3.0858\times10^{-6}$ ile \%32.9 sapma. Ölçülen iyileşme kesri
+    $Q_{2000}=0.02198$; gevşeme ölçekleri $1.2$ dk, $0.53$, $3.29$, $19.07$ gün.
     \item \textbf{Sodyum-22 Pozitronyum (Teorem GP-III.3, Test T37):}
     $O_{\mathrm{exact}}$ bant oranı $0.08413579$; yayımlanan (ln'siz)
     form $159.37$ ve $(2m_e-E)^2$ ikameli form $9.31$ verir; 1 saatlik
@@ -62,11 +63,13 @@ betiği (\path{mini_check_gp3.py}, \texttt{12/12 PASS}) tam geçer.
     \item \textbf{Kesin Matematiksel Teorem:} Burgers kapalı-formları
     (Denk.~\ref{eq:burgers}), PEO oranları (Denk.~\ref{eq:peo}), Vela ODE'si ve
     $O_{\mathrm{exact}}$ bant integrali --- sıfır serbest parametre.
-    \item \textbf{Bağımsız literatür (model dışı):} PEO girdap bantları
-    $r_{\mathrm{ve}}/r_{\mathrm{N}}\in[1.55,1.70]$,
-    $\Delta h_{\mathrm{ve}}/\Delta h_{\mathrm{N}}\in[0.30,0.35]$ [1];
-    Vela glitch $(2.25\pm 0.35)\times 10^{-6}$, $Q\in[0.05,0.18]$ [2,3];
-    $^{22}$Na Ps spektrumları.
+    \item \textbf{Bağımsız literatür (model dışı, kaynak-doğrulanmış):}
+    Viskoelastik girdap deneyi (Groisman--Steinberg 2000 [1]: akış direnci
+    ~20 kat artışı, elastik gerilim 2 büyüklük mertebesi artışı);
+    Vela glitch verileri (Dodson+2002 [3], Dodson+2007 [4]: 2000 olayı
+    $3.0858\times10^{-6}$, 2004 olayı $2.08\times10^{-6}$, ölçülen
+    $Q_{2000}=0.02198$, gevşeme ölçekleri $1.2$ dk, $0.53$, $3.29$, $19.07$ gün);
+    Link+1999 [2]: $\Delta I/I\ge 0.014$; $^{22}$Na Ps spektrumları.
     \item \textbf{Masaüstü protokolü (önerilen düzenek):} $R_{\mathrm{tank}}=100$
     mm, $100$ ppm PEO, HPGe $\sigma=0.85$ keV; kabuk-girdap pinleme köprüsü.
 \end{itemize}
@@ -101,21 +104,31 @@ u_\theta^{\max,\mathrm{N}}=0.38542\,\mathrm{m/s},\quad
 \end{split}
 \end{equation}
 Huni derinliği kapalı-form ve \texttt{quad} integraliyle $1.7\times 10^{-17}$
-farkla doğrulanır. Üç öngörü de literatür bantlarının merkezindedir (Tablo~1).
+farkla doğrulanır (Tablo~1).
+
+\textbf{DENETİM NOTU (19 Ekim 2026, birincil kaynak taraması):}
+Groisman--Steinberg'in $r_{\mathrm{ve}}/r_{\mathrm{N}}\in[1.55,1.70]$ ve
+$\Delta h_{\mathrm{ve}}/\Delta h_{\mathrm{N}}\in[0.30,0.35]$ bantları
+kaynakta \emph{geçmiyor}; o deney iki paralel disk arasında PAAm+şurup
+çözeltisindedir ve çekirdek ya da huni ölçümü içermez. Bu nedenle
+"bandın merkezinde uyum" iddiası \textbf{geri çekilmiş}, bant kaynak-denetimsiz
+olarak işaretlenmiştir; T35 barajı artık bant kullanmaz. Kaynağın gerçekte
+ölçtüğü büyüklükler (akış direncinin ~20 kat artması, elastik gerilimlerin
+iki büyüklük mertebesi artması) deney protokolüyle tutarlıdır.
 
 \begin{table}[!htbp]
 \centering\footnotesize
 \setlength{\tabcolsep}{3pt}
-\caption{\textbf{PIV/huni deneyi (T35): sıfır-parametreli öngörüler vs.\ bantlar.}}
+\caption{\textbf{PIV/huni deneyi (T35): sıfır-parametreli öngörüler.}}
 \label{tab:piv}
 \vspace{0.1cm}
 \begin{tabular}{@{}l|c|c@{}}
 \toprule
-Büyüklük & Meral öngörüsü & Literatür bandı \\
+Büyüklük & Meral öngörüsü & Not \\
 \midrule
-$r_{\mathrm{core}}^{\mathrm{PEO}}/r_{\mathrm{core}}^{\mathrm{N}}$ & $1.62603794$ & $[1.55,1.70]$ \\
+$r_{\mathrm{core}}^{\mathrm{PEO}}/r_{\mathrm{core}}^{\mathrm{N}}$ & $1.62603794$ & $\mathcal{C}_{\mathrm{univ}}$ \\
 $u_\theta^{\max,\mathrm{PEO}}$ & $0.23703$ m/s & $1/\mathcal{C}_{\mathrm{univ}}$ freni \\
-$\Delta h_{\mathrm{PEO}}/\Delta h_{\mathrm{N}}$ & $0.31402536$ & $[0.30,0.35]$ \\
+$\Delta h_{\mathrm{PEO}}/\Delta h_{\mathrm{N}}$ & $0.31402536$ & bant doğrulanamadı \\
 $\Delta h_{\mathrm{PEO}}$ & $8.09603$ mm & $3.1845\times$ bastırma \\
 \bottomrule
 \end{tabular}
@@ -123,37 +136,45 @@ $\Delta h_{\mathrm{PEO}}$ & $8.09603$ mm & $3.1845\times$ bastırma \\
 
 \section{Görev 30 / Test T36 --- Vela Pulsar Glitch}
 
-\textbf{Teorem GP-III.2 (Glitch Genliği ve İyileşme):} \textit{Vela
-($\nu_0=11.195$ Hz, $I_{\mathrm{crust}}/I=0.0160$,
-$\Delta t_{\mathrm{ig}}=2.80$ yıl) için:}
+\textbf{Teorem GP-III.2 (Glitch Genliği ve İyileşme):} \textit{Vela için
+(kaynaktan doğrulanmış girdiler: $\nu_0=11.194615396005$ Hz,
+$|\dot\nu_0|=1.55615\times 10^{-11}$ Hz s$^{-1}$,
+$\Delta I/I \ge 0.0140$, $\Delta t_{\mathrm{ig}}=2.80$ yıl):}
 \begin{equation}
 \boxed{\left(\frac{\Delta\nu}{\nu_0}\right)_{\mathrm{Meral}}
 =\left(\frac{\Delta\nu}{\nu_0}\right)_{\mathrm{base}}
-(1+\mu_s^{\mathrm{Meral}})=2.38190025\times 10^{-6}.}
+(1+\mu_s^{\mathrm{Meral}})=2.07112467\times 10^{-6}.}
 \end{equation}
-\textit{Gözlemsel $(2.25\pm 0.35)\times 10^{-6}$ ile \%5.86
-($0.38\,\sigma$). Hızlı ve toplam iyileşme kesirleri
+\textit{2004 olayının ölçülen ani kesirli boyutu $2.08\times 10^{-6}$
+ile fark \%0.43; en büyük 2000 olayının $3.0858\times 10^{-6}$ değeri
+ile fark \%32.9. Hızlı ve toplam iyileşme kesirleri
 $Q_{\mathrm{fast}}=e^{-2\sqrt{2}}=0.05910575$,
 $Q_{\mathrm{total}}=\Lambda_{\mathrm{Meral}}^{(0)}\mathcal{C}_{\mathrm{univ}}/
-\sqrt{1-\beta_0^2}=0.13569214$; ikisi de $[0.05,0.18]$ içindedir.
-$t\in[0,200]$ gün gevşeme analitik türevle $6.1\times 10^{-5}$ içinde örtüşür
-(Tablo~2).}
+\sqrt{1-\beta_0^2}=0.13569214$; kaynaktan ölçülen iyileşme kesri
+$Q_{2000}=0.02198$ (dönen terimler $0.020/0.31/0.193/0.2362$ Hz
+$\times 10^{-6}$ / $3.45435\times 10^{-5}$ Hz) olarak raporlanır.
+$t\in[0,200]$ gün gevşeme, kaynaktan ölçülen zaman ölçekleriyle
+($1.2$ dk, $0.53$, $3.29$, $19.07$ gün) analitik türevle $1.0\times 10^{-3}$
+içinde örtüşür (Tablo~2).}
 
 \begin{table}[!htbp]
 \centering\footnotesize
 \setlength{\tabcolsep}{3pt}
-\caption{\textbf{Vela glitch (T36): öngörü vs.\ gözlem.}}
+\caption{\textbf{Vela glitch (T36): öngörü vs.\ kaynak-doğrulanmış gözlem.}}
 \label{tab:vela}
 \vspace{0.1cm}
 \begin{tabular}{@{}l|c|c@{}}
 \toprule
 Büyüklük & Değer & Kaynak \\
 \midrule
-$(\Delta\nu/\nu_0)_{\mathrm{base}}$ & $1.97765094\times 10^{-6}$ & rezervuar \\
-$(\Delta\nu/\nu_0)_{\mathrm{Meral}}$ & $2.38190025\times 10^{-6}$ & T36 \\
-Gözlem & $(2.25\pm 0.35)\times 10^{-6}$ & Jodrell Bank \\
-Fark & \%5.86 ($0.38\,\sigma$) & T36 \\
-$Q_{\mathrm{fast}}$ / $Q_{\mathrm{total}}$ & $0.05910575$ / $0.13569214$ & $[0.05,0.18]$ \\
+$(\Delta\nu/\nu_0)_{\mathrm{base}}$ & $1.71961931\times 10^{-6}$ & rezervuar \\
+$(\Delta\nu/\nu_0)_{\mathrm{Meral}}$ & $2.07112467\times 10^{-6}$ & T36 \\
+2004 olayı (ölçüm) & $2.08\times 10^{-6}$ & Dodson+2007 \\
+Fark (2004) & \%0.43 & T36 \\
+2000 olayı (ölçüm, en büyük) & $3.0858\times 10^{-6}$ & Dodson+2002 \\
+Fark (2000) & \%32.9 & T36 \\
+$Q_{\mathrm{fast}}$ / $Q_{\mathrm{total}}$ & $0.05910575$ / $0.13569214$ & model \\
+$Q_{2000}$ (ölçüm) & $0.02198$ & Dodson+2002 \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -227,11 +248,18 @@ lazer PIV + kamera/cetvel; yazılım: \path{solver_engine.py} T35 işlevi.
 \begin{thebibliography}{99}
     \bibitem{gs00} Groisman, A. \& Steinberg, V. (2000). Elastic turbulence in
     a polymer solution flow. \textit{Nature} \textbf{405}, 53--55.
-    \bibitem{lel02} Dodson, R. \textit{et al.} (2002/2007). Vela pulsar glitches.
-    Jodrell Bank catalogue.
+    \url{https://arxiv.org/abs/nlin/0104052}
     \bibitem{link99} Link, B., Epstein, R.~I. \& Lattimer, J.~M. (1999).
-    Pulsar constraints on neutron star structure.
+    Pulsar constraints on neutron star structure and equation of state.
     \textit{Phys.\ Rev.\ Lett.\ \textbf{83}}, 3362--3365.
+    \url{https://arxiv.org/abs/astro-ph/9909146}
+    \bibitem{dod02} Dodson, R.~G., McCulloch, P.~M. \& Lewis, D.~R. (2002).
+    High time resolution observations of the January 2000 glitch in the Vela
+    pulsar. \textit{Astrophys.\ J.\ \textbf{578}}, L57--L60.
+    \url{https://arxiv.org/abs/astro-ph/0201005}
+    \bibitem{dod07} Dodson, R., Lewis, D. \& McCulloch, P. (2007). Two decades
+    of pulsar timing of Vela. \textit{Astrophys.\ Space Sci.\ \textbf{308}}, 585--589.
+    \url{https://arxiv.org/abs/astro-ph/0612371}
     \bibitem{ore49} Ore, A. \& Powell, J.~L. (1949). Three-photon annihilation
     of an electron-positron pair. \textit{Phys.\ Rev.\ \textbf{75}}, 1696--1699.
     \bibitem{meral5} Meral, F. (2026c). \textit{Duran Sicimler Teoremi V}.

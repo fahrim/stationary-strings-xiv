@@ -23,10 +23,13 @@ Yazar: Fahri Meral · Tarih: 19 Ekim 2026 · Sürüm: v1 (Grand Proof III)
 
 ## Sonuçlar (sıfır serbest parametre)
 
-- PEO girdap: çekirdek 5,14198 mm (C = 1,62603794, bant merkezi), hız 0,23703 m/s,
-  huni 8,09603 mm (oran 0,31402536, bant merkezi).
-- Vela glitch 2,38190025e-6, (2,25 ± 0,35)e-6 ile %5,86 (0,38σ);
-  Q_fast 0,05910575, Q_total 0,13569214, ikisi de [0,05,0,18] içinde.
+- PEO girdap: çekirdek 5,14198 mm (C = 1,62603794), hız 0,23703 m/s,
+  huni 8,09603 mm (oran 0,31402536). **Karşılaştırma bantları DOĞRULANAMADI**
+  (Groisman–Steinberg 2000'de geçmiyor); bant uyumu iddiası yapılmaz.
+- Vela glitch 2,07112467e-6, kaynak-doğrulanmış girdilerle (ν = 11,194615 Hz,
+  |ν̇| = 1,55615e-11 Hz/s, ΔI/I ≥ 0,014): 2004 olayından (2,08e-6) %0,43,
+  en büyük 2000 olayından (3,0858e-6) %32,9; ölçülen iyileşme Q_2000 = 0,02198;
+  gevşeme ölçekleri 1,2 dk / 0,53 / 3,29 / 19,07 gün.
 - Na-22 bant oranı 0,08413579; sahte formlar 9,31 / 159,37, 2,4e6σ ile çürütüldü.
 
 ## Sayısal yeniden-üretim
@@ -38,7 +41,7 @@ T35–T37 testleri **Makale V deposundaki** çözücüyle üretilir
 git clone https://github.com/fahrim/stationary-strings-v
 pip install numpy scipy matplotlib
 python duran_sicimler_sim/solver_engine.py   # T1–T37 (38/38 PASS)
-python duran_sicimler_sim/mini_check_gp3.py  # bağımsız çapraz kontrol (12/12 PASS)
+python duran_sicimler_sim/mini_check_gp3.py  # bağımsız çapraz kontrol (13/13 PASS)
 ```
 
 Bağımsız çapraz kontrol çözücüyü import etmez.
