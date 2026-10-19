@@ -45,9 +45,9 @@ and open observatory data is presented:
     $Q_{\mathrm{fast}}=0.05910575$, $Q_{\mathrm{total}}=0.13569214$,
     both inside $[0.05,0.18]$.
     \item \textbf{Sodium-22 Positronium (Theorem GP-III.3, Test T37):}
-    The $O_{\mathrm{exact}}$ band ratio is $0.08413579$; the misprinted formula
-    gives $9.31$ and the pole formula $159.37$; one hour of HPGe counting
-    rules both out at $2.4\times 10^6\,\sigma$.
+    The $O_{\mathrm{exact}}$ band ratio is $0.08413579$; the published
+    (ln-free) form gives $159.37$ and the $(2m_e-E)^2$ substituted form
+    $9.31$; one hour of HPGe counting rules both out at $2.4\times 10^6\,\sigma$.
 \end{enumerate}
 The numerical verification chain \texttt{T1--T37 (38/38 PASS)} and the
 independent cross-check script (\path{mini_check_gp3.py}, \texttt{12/12 PASS})
@@ -166,9 +166,9 @@ $Q_{\mathrm{fast}}$ / $Q_{\mathrm{total}}$ & $0.05910575$ / $0.13569214$ & $[0.0
 =\frac{\int_{10}^{100}O_{\mathrm{exact}}\,dE}
 {\int_{350}^{490}O_{\mathrm{exact}}\,dE}=0.08413579.}
 \end{equation}
-\textit{The misprinted formula gives $9.31$, the pole formula $159.37$;
-one hour of HPGe counting ($N_{3\gamma}=4.96\times 10^6$) rules both out at
-$2.4\times 10^6\,\sigma$ ($>500\,\sigma$) (Table~3).}
+\textit{The published (ln-free) form gives $159.37$, the $(2m_e-E)^2$
+substituted form $9.31$; one hour of HPGe counting ($N_{3\gamma}=4.96\times
+10^6$) rules both out at $2.4\times 10^6\,\sigma$ ($>500\,\sigma$) (Table~3).}
 
 \begin{table}[!htbp]
 \centering\footnotesize
@@ -181,8 +181,8 @@ $2.4\times 10^6\,\sigma$ ($>500\,\sigma$) (Table~3).}
 Formula & $\mathcal{B}$ & Verdict \\
 \midrule
 $O_{\mathrm{exact}}$ (1949) & $0.08413579$ & reference \\
-Misprinted (ln-free) & $9.31$ & refuted \\
-Pole ($(2m-E)^2$ substituted) & $159.37$ & refuted \\
+Published ln-free form & $159.37$ & refuted \\
+$(2m_e-E)^2$ substituted form & $9.31$ & refuted \\
 Lab separation & $2.4\times 10^6\,\sigma$ & $>500\,\sigma$ \\
 \bottomrule
 \end{tabular}

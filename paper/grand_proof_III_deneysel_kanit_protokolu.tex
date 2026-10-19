@@ -47,9 +47,9 @@ gözlemevi verisiyle doğrudan testi sunulmaktadır:
     $Q_{\mathrm{fast}}=0.05910575$, $Q_{\mathrm{total}}=0.13569214$,
     ikisi de $[0.05,0.18]$ bandındadır.
     \item \textbf{Sodyum-22 Pozitronyum (Teorem GP-III.3, Test T37):}
-    $O_{\mathrm{exact}}$ bant oranı $0.08413579$; basım-hatalı formül
-    $9.31$ ve kutuplu formül $159.37$ verir; 1 saatlik HPGe sayımı
-    $2.4\times 10^6\,\sigma$ ile ikisini de çürütür.
+    $O_{\mathrm{exact}}$ bant oranı $0.08413579$; yayımlanan (ln'siz)
+    form $159.37$ ve $(2m_e-E)^2$ ikameli form $9.31$ verir; 1 saatlik
+    HPGe sayımı $2.4\times 10^6\,\sigma$ ile ikisini de çürütür.
 \end{enumerate}
 Sayısal doğrulama zinciri \texttt{T1--T37 (38/38 PASS)} ve bağımsız çapraz kontrol
 betiği (\path{mini_check_gp3.py}, \texttt{12/12 PASS}) tam geçer.
@@ -167,7 +167,8 @@ $Q_{\mathrm{fast}}$ / $Q_{\mathrm{total}}$ & $0.05910575$ / $0.13569214$ & $[0.0
 =\frac{\int_{10}^{100}O_{\mathrm{exact}}\,dE}
 {\int_{350}^{490}O_{\mathrm{exact}}\,dE}=0.08413579.}
 \end{equation}
-\textit{Basım-hatalı formül $9.31$, kutuplu formül $159.37$ verir;
+\textit{Basımda yayımlanan (ln'siz) form $159.37$, yalnız
+$(2m_e-E)^2$ ikameli form $9.31$ verir;
 1 saatlik HPGe sayımı ($N_{3\gamma}=4.96\times 10^6$) ikisini de
 $2.4\times 10^6\,\sigma$ ($>500\,\sigma$) ile çürütür (Tablo~3).}
 
@@ -182,8 +183,8 @@ $2.4\times 10^6\,\sigma$ ($>500\,\sigma$) ile çürütür (Tablo~3).}
 Formül & $\mathcal{B}$ & Hüküm \\
 \midrule
 $O_{\mathrm{exact}}$ (1949) & $0.08413579$ & referans \\
-Basım-hatalı (ln'siz) & $9.31$ & çürütüldü \\
-Kutuplu ($(2m-E)^2$ ikameli) & $159.37$ & çürütüldü \\
+Yayımlanan ln'siz form & $159.37$ & çürütüldü \\
+$(2m_e-E)^2$ ikameli form & $9.31$ & çürütüldü \\
 Laboratuvar ayrımı & $2.4\times 10^6\,\sigma$ & $>500\,\sigma$ \\
 \bottomrule
 \end{tabular}
