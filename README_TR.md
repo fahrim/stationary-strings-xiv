@@ -24,8 +24,10 @@ Yazar: Fahri Meral · Tarih: 19 Ekim 2026 · Sürüm: v1 (Grand Proof III)
 ## Sonuçlar (sıfır serbest parametre)
 
 - PEO girdap: çekirdek 5,14198 mm (C = 1,62603794), hız 0,23703 m/s,
-  huni 8,09603 mm (oran 0,31402536). **Karşılaştırma bantları DOĞRULANAMADI**
-  (Groisman–Steinberg 2000'de geçmiyor); bant uyumu iddiası yapılmaz.
+  huni 8,09603 mm (oran 0,31402536 = (1/a²)(1/(1+µ_s))). **Karşılaştırma
+  bantları hayalet parametredir** (git arkeolojisi: bu çalışmayla girdi,
+  literatür izi yok) ve iddia edilmez. Kaynak ölçümü a_ölçüm = 12–19
+  verir; **model ölçümle çelişir**.
 - Vela glitch 2,07112467e-6, kaynak-doğrulanmış girdilerle (ν = 11,194615 Hz,
   |ν̇| = 1,55615e-11 Hz/s, ΔI/I ≥ 0,014): 2004 olayından (2,08e-6) %0,43,
   en büyük 2000 olayından (3,0858e-6) %32,9; ölçülen iyileşme Q_2000 = 0,02198;

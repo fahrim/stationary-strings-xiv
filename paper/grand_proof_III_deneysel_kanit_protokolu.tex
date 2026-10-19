@@ -106,30 +106,59 @@ u_\theta^{\max,\mathrm{N}}=0.38542\,\mathrm{m/s},\quad
 Huni derinliği kapalı-form ve \texttt{quad} integraliyle $1.7\times 10^{-17}$
 farkla doğrulanır (Tablo~1).
 
-\textbf{DENETİM NOTU (19 Ekim 2026, birincil kaynak taraması):}
-Groisman--Steinberg'in $r_{\mathrm{ve}}/r_{\mathrm{N}}\in[1.55,1.70]$ ve
-$\Delta h_{\mathrm{ve}}/\Delta h_{\mathrm{N}}\in[0.30,0.35]$ bantları
-kaynakta \emph{geçmiyor}; o deney iki paralel disk arasında PAAm+şurup
-çözeltisindedir ve çekirdek ya da huni ölçümü içermez. Bu nedenle
-"bandın merkezinde uyum" iddiası \textbf{geri çekilmiş}, bant kaynak-denetimsiz
-olarak işaretlenmiştir; T35 barajı artık bant kullanmaz. Kaynağın gerçekte
-ölçtüğü büyüklükler (akış direncinin ~20 kat artması, elastik gerilimlerin
-iki büyüklük mertebesi artması) deney protokolüyle tutarlıdır.
+\textbf{DENETİM NOTU (19 Ekim 2026, iki aşamalı adli denetim):}
+\begin{enumerate}
+    \item \textit{Git arkeolojisi.} $\texttt{git log -S "1.55, 1.70}$ taraması
+    bandın ilk kez bu çalışmanın Faz 11 commit'inde girdiğini gösterir; depoda
+    literatürden gelen hiçbir iz yoktur. Band, görev metninden sızmış bir
+    \emph{hayalet parametredir} ve atıf zinciri yerine uydurma atıf hâline
+    gelmiştir; \textbf{kaynak metin iddiası geri çekilmiştir}.
+    \item \textit{Şekil envanteri.} Kaynağın beş figürü: şema,
+    $\sigma/\sigma_{lam}$--$\dot\gamma$ eğrisi, akış snapshot'ları ve iki
+    Fourier spektrumu. \textbf{Serbest yüzey/dimple ölçümü yoktur}; dolayısıyla
+    huni oranının (0.31402536) hiçbir literatür kıyaslaması yoktur.
+    \item \textit{Tersine mühendislik.} Hidrostatik denge
+    $\Delta h = g^{-1}\int u_\theta^2/r\,dr$ ve Burgers ölçeği $r_c$ ile
+    $\Delta h\propto 1/r_c^2$ verir:
+    \begin{equation}
+    \frac{\Delta h_{\mathrm{PEO}}}{\Delta h_{\mathrm{N}}}
+    =\underbrace{\frac{1}{a^2}}_{\text{hidrostatik}}\,
+    \underbrace{\frac{1}{1+\mu_s^{\mathrm{Meral}}}}_{\text{sicim gerilimi}},
+    \qquad
+    \frac{u_\theta^{\max,\mathrm{PEO}}}{u_\theta^{\max,\mathrm{N}}}=\frac{1}{a}.
+    \end{equation}
+    Buna göre T35'in üç büyüklüğü aslında \emph{iki} bağımsız büyüklüktür
+    ($a\equiv\mathcal{C}_{\mathrm{univ}}$ ve $\mu_s$).
+    \item \textit{Duyarlılık.} $a_{\mathrm{PEO}}$ kaynakta bulunmadığından
+    \textbf{serbest kalibrasyon parametresi} olarak $[1.0,2.5]$ aralığında
+    ilan edilmiş ve modelin bu aralıktaki öngörüleri raporlanmıştır.
+    \item \textit{Kaynaklı karşılaştırma.} Kaynakta geçiş
+    $\dot\gamma\approx 1\,\mathrm{s^{-1}}$ (Wi = 3.5, Re $\approx 0.3$) ve
+    akış direnci artışı $\sigma/\sigma_{lam}=12$ ($d=10$ mm) ve 19
+    ($d=20$ mm) ölçülmüştür. Sabit torkta direnç artışı hız frenlemesiyle
+    ters orantılı olduğundan ölçüm $a_{\mathrm{ölçüm}}=12$--$19$
+    (frenleme 0.053--0.083) verir. \textbf{Modelin $a=1.626$'ı (frenleme
+    0.615) bu ölçümle uyumsuzdur} ve direnç artışını açıklamaz.
+\end{enumerate}
+Bunun dürüst sonucu: GP-III'ün T35 iddiası \emph{ölçümle çelişir}; deneyin
+kendisi falsifiable testtir. Kaynak deposu:
+\path{src/08_groisman_steinberg_elastic_turbulence_Nature2000.pdf}.
 
 \begin{table}[!htbp]
 \centering\footnotesize
 \setlength{\tabcolsep}{3pt}
-\caption{\textbf{PIV/huni deneyi (T35): sıfır-parametreli öngörüler.}}
+\caption{\textbf{PIV/funnel experiment (T35): zero-parameter predictions.}}
 \label{tab:piv}
 \vspace{0.1cm}
 \begin{tabular}{@{}l|c|c@{}}
 \toprule
 Büyüklük & Meral öngörüsü & Not \\
 \midrule
-$r_{\mathrm{core}}^{\mathrm{PEO}}/r_{\mathrm{core}}^{\mathrm{N}}$ & $1.62603794$ & $\mathcal{C}_{\mathrm{univ}}$ \\
-$u_\theta^{\max,\mathrm{PEO}}$ & $0.23703$ m/s & $1/\mathcal{C}_{\mathrm{univ}}$ freni \\
-$\Delta h_{\mathrm{PEO}}/\Delta h_{\mathrm{N}}$ & $0.31402536$ & bant doğrulanamadı \\
+$r_{\mathrm{core}}^{\mathrm{PEO}}/r_{\mathrm{core}}^{\mathrm{N}}$ & $1.62603794$ & $a_{\mathrm{PEO}}=\mathcal{C}_{\mathrm{univ}}$ \\
+$u_\theta^{\max,\mathrm{PEO}}$ & $0.23703$ m/s & $1/a$ (sonuç) \\
+$\Delta h_{\mathrm{PEO}}/\Delta h_{\mathrm{N}}$ & $0.31402536$ & $(1/a^2)(1/(1+\mu_s))$ \\
 $\Delta h_{\mathrm{PEO}}$ & $8.09603$ mm & $3.1845\times$ bastırma \\
+$a_{\mathrm{ölçüm}}$ (kaynak) & $12$--$19$ & G\&S $\sigma/\sigma_{lam}$ \\
 \bottomrule
 \end{tabular}
 \end{table}

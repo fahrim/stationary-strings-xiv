@@ -24,8 +24,10 @@ Author: Fahri Meral · Date: October 19, 2026 · Version: v1 (Grand Proof III)
 ## Results (zero free parameters)
 
 - PEO vortex: core 5.14198 mm (C = 1.62603794), velocity 0.23703 m/s,
-  funnel 8.09603 mm (ratio 0.31402536). **The comparison bands are NOT verified:**
-  they do not occur in Groisman & Steinberg (2000), so no band agreement is claimed.
+  funnel 8.09603 mm (ratio 0.31402536 = (1/a²)(1/(1+µ_s))). **The comparison
+  bands are a ghost parameter** (git archaeology: they entered with this
+  work, no literature provenance) and are not claimed. The source measurement
+  implies a_meas = 12–19, so **the model contradicts the measurement**.
 - Vela glitch 2.07112467e-6 with source-verified inputs (ν = 11.194615 Hz,
   |ν̇| = 1.55615e-11 Hz/s, ΔI/I ≥ 0.014): 0.43% from the 2004 event
   (2.08e-6) and 32.9% from the largest 2000 event (3.0858e-6);

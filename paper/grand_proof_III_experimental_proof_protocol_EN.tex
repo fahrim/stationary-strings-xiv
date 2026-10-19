@@ -105,16 +105,45 @@ u_\theta^{\max,\mathrm{N}}=0.38542\,\mathrm{m/s},\quad
 The funnel depth agrees between closed form and \texttt{quad} integration to
 $1.7\times 10^{-17}$ (Table~1).
 
-\textbf{Audit note (19 October 2026, primary-source scan):} the bands
-$r_{\mathrm{ve}}/r_{\mathrm{N}}\in[1.55,1.70]$ and
-$\Delta h_{\mathrm{ve}}/\Delta h_{\mathrm{N}}\in[0.30,0.35]$ do \emph{not}
-occur in Groisman--Steinberg; that experiment uses a PAAm+syrup solution
-between two parallel disks and contains no core or funnel measurement. The
-"agreement at the band center" claim is therefore \textbf{retracted}, the
-bands are marked source-unverified, and the T35 criterion no longer uses
-them. The quantities that source actually measured (flow resistance up
-~20-fold, elastic stresses up two orders of magnitude) are consistent with
-the proposed protocol.
+\textbf{Audit note (19 October 2026, two-stage forensic audit):}
+\begin{enumerate}
+    \item \textit{Git archaeology.} A $\texttt{git log -S "1.55, 1.70}$ scan
+    shows the bands entered with this work's Phase 11 commit; there is no
+    literature provenance anywhere in the repository. The bands are a
+    \emph{ghost parameter} that leaked in from the task text and hardened into
+    a false citation; \textbf{the source claim is retracted}.
+    \item \textit{Figure inventory.} The source has five figures: the
+    schematic, the $\sigma/\sigma_{lam}$--$\dot\gamma$ curve, flow
+    snapshots, and two Fourier spectra. \textbf{There is no free-surface or
+    dimple measurement}, so the funnel ratio (0.31402536) has no literature
+    benchmark at all.
+    \item \textit{Reverse derivation.} Hydrostatic balance
+    $\Delta h = g^{-1}\int u_\theta^2/r\,dr$ with the Burgers scale $r_c$
+    gives $\Delta h\propto 1/r_c^2$:
+    \begin{equation}
+    \frac{\Delta h_{\mathrm{PEO}}}{\Delta h_{\mathrm{N}}}
+    =\underbrace{\frac{1}{a^2}}_{\text{hydrostatic}}\,
+    \underbrace{\frac{1}{1+\mu_s^{\mathrm{Meral}}}}_{\text{string tension}},
+    \qquad
+    \frac{u_\theta^{\max,\mathrm{PEO}}}{u_\theta^{\max,\mathrm{N}}}=\frac{1}{a}.
+    \end{equation}
+    The three T35 quantities are therefore only \emph{two} independent
+    numbers ($a\equiv\mathcal{C}_{\mathrm{univ}}$ and $\mu_s$).
+    \item \textit{Sensitivity.} Since $a_{\mathrm{PEO}}$ is not in the
+    literature it is declared a \textbf{free calibration parameter} over
+    $[1.0,2.5]$, with the model predictions tabulated.
+    \item \textit{Source-based comparison.} The source measures a transition
+    at $\dot\gamma\approx 1\,\mathrm{s^{-1}}$ (Wi = 3.5, Re $\approx 0.3$) and
+    a flow-resistance increase $\sigma/\sigma_{lam}=12$ ($d=10$ mm) and 19
+    ($d=20$ mm). At fixed torque the resistance increase is inversely
+    proportional to the braking factor, so the measurement implies
+    $a_{\mathrm{meas}}=12$--$19$ (braking 0.053--0.083). \textbf{The model
+    value $a=1.626$ (braking 0.615) is inconsistent with this measurement}
+    and does not reproduce the resistance increase.
+\end{enumerate}
+The honest conclusion: GP-III's T35 claim \emph{contradicts the
+measurement}; the experiment itself is the falsifiable test. Source in the
+repository: \path{src/08_groisman_steinberg_elastic_turbulence_Nature2000.pdf}.
 
 \begin{table}[!htbp]
 \centering\footnotesize
@@ -126,10 +155,11 @@ the proposed protocol.
 \toprule
 Quantity & Meral prediction & Note \\
 \midrule
-$r_{\mathrm{core}}^{\mathrm{PEO}}/r_{\mathrm{core}}^{\mathrm{N}}$ & $1.62603794$ & $\mathcal{C}_{\mathrm{univ}}$ \\
-$u_\theta^{\max,\mathrm{PEO}}$ & $0.23703$ m/s & $1/\mathcal{C}_{\mathrm{univ}}$ braking \\
-$\Delta h_{\mathrm{PEO}}/\Delta h_{\mathrm{N}}$ & $0.31402536$ & band unverified \\
+$r_{\mathrm{core}}^{\mathrm{PEO}}/r_{\mathrm{core}}^{\mathrm{N}}$ & $1.62603794$ & $a_{\mathrm{PEO}}=\mathcal{C}_{\mathrm{univ}}$ \\
+$u_\theta^{\max,\mathrm{PEO}}$ & $0.23703$ m/s & $1/a$ (a consequence) \\
+$\Delta h_{\mathrm{PEO}}/\Delta h_{\mathrm{N}}$ & $0.31402536$ & $(1/a^2)(1/(1+\mu_s))$ \\
 $\Delta h_{\mathrm{PEO}}$ & $8.09603$ mm & $3.1845\times$ suppression \\
+$a_{\mathrm{meas}}$ (source) & $12$--$19$ & G\&S $\sigma/\sigma_{lam}$ \\
 \bottomrule
 \end{tabular}
 \end{table}
