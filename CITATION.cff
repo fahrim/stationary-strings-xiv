@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+title: "Grand Proof III: Benchtop Viscoelastic Vortex PIV Experiment, Vela Pulsar Glitch Observations, and Sodium-22 Positronium Laboratory Evidence"
+message: "If you use this work, please cite it."
+type: unpublished
+authors:
+  - family-names: Meral
+    given-names: Fahri
+date-released: 2026-10-19
+version: v1
+repository-code: "https://github.com/fahrim/grand-proof-iii"
+license: CC-BY-4.0
+keywords:
+  - viscoelastic vortex
+  - particle image velocimetry
+  - Vela pulsar glitch
+  - positronium
+  - sodium-22
+  - Ore-Powell
+  - benchtop experiment
