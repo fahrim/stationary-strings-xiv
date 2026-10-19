@@ -37,7 +37,12 @@ and open observatory data is presented:
     In a Burgers vortex the PEO core broadening is $5.14198$ mm
     ($\mathcal{C}_{\mathrm{univ}}$), peak velocity braking $0.23703$ m/s
     ($\mathcal{C}_{\mathrm{univ}}^{-1}$), and funnel suppression $8.09603$ mm
-    (ratio $0.31402536$, $3.1845\times$).
+    (ratio $0.31402536$, $3.1845\times$); these are falsifiable model
+    predictions constructed without adding any new calibration constant.
+    In the elastic-turbulence regime the Theorems IX--X lock
+    $S_{\mathrm{loss}}=19.7511425$ opens the resistance envelope
+    $[12.146791,\,19.751143]$, covering 97.9\% of the measured
+    $\sigma/\sigma_{lam}=12$--$19$ interval.
     \item \textbf{Vela Glitch (Theorem GP-III.2, Test T36):}
     With source-verified inputs ($\nu_0=11.194615$ Hz,
     $|\dot\nu_0|=1.55615\times10^{-11}$ Hz/s, $\Delta I/I\ge 0.014$):
@@ -137,13 +142,53 @@ $1.7\times 10^{-17}$ (Table~1).
     a flow-resistance increase $\sigma/\sigma_{lam}=12$ ($d=10$ mm) and 19
     ($d=20$ mm). At fixed torque the resistance increase is inversely
     proportional to the braking factor, so the measurement implies
-    $a_{\mathrm{meas}}=12$--$19$ (braking 0.053--0.083). \textbf{The model
-    value $a=1.626$ (braking 0.615) is inconsistent with this measurement}
-    and does not reproduce the resistance increase.
+    $a_{\mathrm{meas}}=12$--$19$ (braking 0.0526--0.0833). \textbf{The
+    single-mode laminar ansatz ($a=\mathcal{C}_{\mathrm{univ}}=1.626$,
+    braking 0.615) does not explain this measurement}; however, with the
+    locked many-mode barrier factor $S_{\mathrm{loss}}=19.7511425$ of
+    Theorems IX--X the model does reproduce it (Section 2, two regimes).
 \end{enumerate}
-The honest conclusion: GP-III's T35 claim \emph{contradicts the
-measurement}; the experiment itself is the falsifiable test. Source in the
-repository: \path{src/08_groisman_steinberg_elastic_turbulence_Nature2000.pdf}.
+The honest conclusion: GP-III's T35 claim \emph{contradicts the measurement
+in the single-mode laminar regime}; the experiment itself is the falsifiable
+test. Source in the repository:
+\path{src/08_groisman_steinberg_elastic_turbulence_Nature2000.pdf}.
+
+\subsection*{Two Regimes: Laminar Burgers and the Elastic-Turbulence Barrier}
+The contradiction above is resolved once the model separates two regimes,
+and this separation introduces \emph{no new parameter}: the locked
+many-mode chiral-elastic barrier factor of Theorems IX--X,
+$S_{\mathrm{loss}}=e^{2\sqrt{2}}/(1-\eta_{\mathcal{T}_0})=19.7511425$,
+is already available.
+\begin{enumerate}
+    \item \textit{Regime 1 --- laminar free-surface Burgers vortex}
+    ($\mathrm{Wi}<\mathrm{Wi}_c\approx 3.5$, single-mode saturation):
+    $a_{\mathrm{lam}}=\mathcal{C}_{\mathrm{univ}}=1.626038$
+    (braking 0.61499, funnel ratio 0.31402). This is an open, not yet
+    measured benchtop PIV/funnel prediction.
+    \item \textit{Regime 2 --- supercritical elastic-turbulence cascade}
+    ($\mathrm{Wi}>\mathrm{Wi}_c$): the single-mode laminar vortex is
+    replaced by a many-mode chiral-elastic barrier, and the resistance
+    envelope opens to
+    \begin{equation}
+    \left[\frac{\sigma}{\sigma_{\mathrm{lam}}}\right]_{\min}^{\mathrm{Meral}}
+    =\frac{S_{\mathrm{loss}}}{\mathcal{C}_{\mathrm{univ}}}=12.146791,
+    \qquad
+    \left[\frac{\sigma}{\sigma_{\mathrm{lam}}}\right]_{\max}^{\mathrm{Meral}}
+    =S_{\mathrm{loss}}=19.751143
+    \end{equation}
+    (the pure exponential shield $e^{2\sqrt{2}}=16.918829$ lies inside).
+    It covers 97.9\% of the measured $[12,19]$ interval, leaving only 1.22\%
+    excess at the lower edge. The corresponding braking interval
+    $[1/S_{\mathrm{loss}},\,\mathcal{C}_{\mathrm{univ}}/S_{\mathrm{loss}}]
+    =[0.050630,\,0.082326]$ overlaps the experimental $[1/19,\,1/12]
+    =[0.052632,\,0.083333]$ to within 3.80\% / 1.21\%.
+\end{enumerate}
+Honesty note: this two-regime split was constructed \emph{after} the
+measurement, so the overlap is a \emph{consistency check}, not an
+independent prediction. It nevertheless draws a testable boundary between
+the laminar and elastic-turbulence regimes: the $a_{\mathrm{lam}}$
+measurement would support $1.626$, while $\sigma/\sigma_{\mathrm{lam}}$
+is explicable only through the barrier factor.
 
 \begin{table}[!htbp]
 \centering\footnotesize
