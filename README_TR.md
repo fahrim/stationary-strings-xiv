@@ -8,7 +8,7 @@
 
 Yazar: Fahri Meral · Tarih: 19 Ekim 2026 · Sürüm: v1 (Stationary Strings XIV)
 
-> **Durum:** Yayımlanmamış ön-baskı (v1). Hakem denetiminden geçmemiştir. *Zenodo DOI'si yüklemeyi bekliyor.*
+> **Durum:** Yayımlanmamış ön-baskı (v1). Hakem denetiminden geçmemiştir. *[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.23517485-blue.svg)](https://doi.org/10.5281/zenodo.23517485)*
 
 ## İçerik
 
@@ -67,6 +67,7 @@ Bağımsız çapraz kontrol çözücüyü import etmez. Şekil 1,
   title  = {Stationary Strings XIV: Masaüstü Viskoelastik Girdap PIV Deneyi, Vela Pulsar Glitch Gözlemleri ve Sodyum-22 Pozitronyum Laboratuvar Kanıtı},
   year   = {2026},
   url    = {https://github.com/fahrim/stationary-strings-xiv}
+  doi    = {10.5281/zenodo.23517485},
 }
 ```
 

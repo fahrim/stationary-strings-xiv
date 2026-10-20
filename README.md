@@ -8,7 +8,7 @@
 
 Author: Fahri Meral · Date: October 19, 2026 · Version: v1 (Stationary Strings XIV)
 
-> **Status:** Unpublished preprint (v1). Not peer-reviewed. *Zenodo DOI pending deposit.*
+> **Status:** Unpublished preprint (v1). Not peer-reviewed. *[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.23517485-blue.svg)](https://doi.org/10.5281/zenodo.23517485)*
 
 ## Contents
 
@@ -70,6 +70,7 @@ the `fig15` function in `duran_sicimler_sim/generate_figures.py`.
   title  = {Stationary Strings XIV: Benchtop Viscoelastic Vortex PIV Experiment, Vela Pulsar Glitch Observations, and Sodium-22 Positronium Laboratory Evidence},
   year   = {2026},
   url    = {https://github.com/fahrim/stationary-strings-xiv}
+  doi    = {10.5281/zenodo.23517485},
 }
 ```
 
