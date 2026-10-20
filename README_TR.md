@@ -4,11 +4,14 @@
 
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](LICENSE)
 
-**Stationary Strings XIV: Masaüstü Viskoelastik Girdap PIV Deneyi, Vela Pulsar Glitch Gözlemleri ve Sodyum-22 Pozitronyum Laboratuvar Kanıtı**
+**Stationary Strings XIV: İki Önerilen Masaütstü Testi (Viskoelastik Girdap PIV ve Sodyum-22 Pozitronyum) ve Vela Pulsar Glitch Gözlemleri**
+
+> **All versions (concept DOI):** [10.5281/zenodo.23517484](https://doi.org/10.5281/zenodo.23517484)  
+> **Previous version (v1):** [10.5281/zenodo.23517485](https://doi.org/10.5281/zenodo.23517485)
 
 Yazar: Fahri Meral · Tarih: 19 Ekim 2026 · Sürüm: v1 (Stationary Strings XIV)
 
-> **Durum:** Yayımlanmamış ön-baskı (v1). Hakem denetiminden geçmemiştir. *[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.23517485-blue.svg)](https://doi.org/10.5281/zenodo.23517485)*
+> **Durum:** Yayımlanmamış ön-baskı (v1). Hakem denetiminden geçmemiştir. *[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.23519746-blue.svg)](https://doi.org/10.5281/zenodo.23519746)*
 
 ## İçerik
 
@@ -64,10 +67,10 @@ Bağımsız çapraz kontrol çözücüyü import etmez. Şekil 1,
 ```bibtex
 @misc{meral2026grandproofiii,
   author = {Fahri Meral},
-  title  = {Stationary Strings XIV: Masaüstü Viskoelastik Girdap PIV Deneyi, Vela Pulsar Glitch Gözlemleri ve Sodyum-22 Pozitronyum Laboratuvar Kanıtı},
+  title  = {Stationary Strings XIV: İki Önerilen Masaütstü Testi (Viskoelastik Girdap PIV ve Sodyum-22 Pozitronyum) ve Vela Pulsar Glitch Gözlemleri},
   year   = {2026},
   url    = {https://github.com/fahrim/stationary-strings-xiv},
-  doi    = {10.5281/zenodo.23517485},
+  doi    = {10.5281/zenodo.23519746},
 }
 ```
 

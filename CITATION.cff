@@ -1,11 +1,12 @@
 cff-version: 1.2.0
-title: "Stationary Strings XIV: Benchtop Viscoelastic Vortex PIV Experiment, Vela Pulsar Glitch Observations, and Sodium-22 Positronium Laboratory Evidence"
+title: "Stationary Strings XIV: Two Proposed Benchtop Tests (Viscoelastic Vortex PIV and Sodium-22 Positronium) and Vela Pulsar Glitch Observations"
 message: "If you use this work, please cite it."
 type: unpublished
 authors:
   - family-names: Meral
     given-names: Fahri
-doi: 10.5281/zenodo.23517485
+doi: 10.5281/zenodo.23519746
+conceptdoi: 10.5281/zenodo.23517484
 date-released: 2026-10-19
 version: v1
 repository-code: "https://github.com/fahrim/stationary-strings-xiv"

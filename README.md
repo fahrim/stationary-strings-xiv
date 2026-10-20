@@ -4,11 +4,14 @@
 
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](LICENSE)
 
-**Stationary Strings XIV: Benchtop Viscoelastic Vortex PIV Experiment, Vela Pulsar Glitch Observations, and Sodium-22 Positronium Laboratory Evidence**
+**Stationary Strings XIV: Two Proposed Benchtop Tests (Viscoelastic Vortex PIV and Sodium-22 Positronium) and Vela Pulsar Glitch Observations**
+
+> **All versions (concept DOI):** [10.5281/zenodo.23517484](https://doi.org/10.5281/zenodo.23517484)  
+> **Previous version (v1):** [10.5281/zenodo.23517485](https://doi.org/10.5281/zenodo.23517485)
 
 Author: Fahri Meral · Date: October 19, 2026 · Version: v1 (Stationary Strings XIV)
 
-> **Status:** Unpublished preprint (v1). Not peer-reviewed. *[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.23517485-blue.svg)](https://doi.org/10.5281/zenodo.23517485)*
+> **Status:** Unpublished preprint (v1). Not peer-reviewed. *[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.23519746-blue.svg)](https://doi.org/10.5281/zenodo.23519746)*
 
 ## Contents
 
@@ -67,10 +70,10 @@ the `fig15` function in `duran_sicimler_sim/generate_figures.py`.
 ```bibtex
 @misc{meral2026grandproofiii,
   author = {Fahri Meral},
-  title  = {Stationary Strings XIV: Benchtop Viscoelastic Vortex PIV Experiment, Vela Pulsar Glitch Observations, and Sodium-22 Positronium Laboratory Evidence},
+  title  = {Stationary Strings XIV: Two Proposed Benchtop Tests (Viscoelastic Vortex PIV and Sodium-22 Positronium) and Vela Pulsar Glitch Observations},
   year   = {2026},
   url    = {https://github.com/fahrim/stationary-strings-xiv},
-  doi    = {10.5281/zenodo.23517485},
+  doi    = {10.5281/zenodo.23519746},
 }
 ```
 
