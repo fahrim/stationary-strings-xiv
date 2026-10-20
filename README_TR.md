@@ -66,7 +66,7 @@ Bağımsız çapraz kontrol çözücüyü import etmez. Şekil 1,
   author = {Fahri Meral},
   title  = {Stationary Strings XIV: Masaüstü Viskoelastik Girdap PIV Deneyi, Vela Pulsar Glitch Gözlemleri ve Sodyum-22 Pozitronyum Laboratuvar Kanıtı},
   year   = {2026},
-  url    = {https://github.com/fahrim/stationary-strings-xiv}
+  url    = {https://github.com/fahrim/stationary-strings-xiv},
   doi    = {10.5281/zenodo.23517485},
 }
 ```

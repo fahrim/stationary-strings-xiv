@@ -69,7 +69,7 @@ the `fig15` function in `duran_sicimler_sim/generate_figures.py`.
   author = {Fahri Meral},
   title  = {Stationary Strings XIV: Benchtop Viscoelastic Vortex PIV Experiment, Vela Pulsar Glitch Observations, and Sodium-22 Positronium Laboratory Evidence},
   year   = {2026},
-  url    = {https://github.com/fahrim/stationary-strings-xiv}
+  url    = {https://github.com/fahrim/stationary-strings-xiv},
   doi    = {10.5281/zenodo.23517485},
 }
 ```
